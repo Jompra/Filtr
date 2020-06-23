@@ -1,0 +1,53 @@
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  input[type='range'] {
+    overflow: hidden;
+    width: 120px;
+    height:15px;
+    border-radius: 12px;
+    -webkit-appearance: none;
+    background-color:#9bc3cc41;
+    border: 1px solid rgb(185, 185, 185);
+
+
+  @media (max-width: 400px) {
+    width: 80px;
+    margin: 0 10px;
+  }
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #88ada8;
+    margin-top: -1px;
+  }
+  
+  input[type='range']::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: pointer;
+    background:#332f31;
+    box-shadow: -80px 0 0 80px #332f31;
+  }
+
+
+}
+/** FF*/
+input[type="range"]::-moz-range-progress {
+background-color: #43e5f7; 
+}
+input[type="range"]::-moz-range-track {  
+background-color: #9a905d;
+}
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+background-color: #43e5f7; 
+}
+input[type="range"]::-ms-fill-upper {  
+background-color: #9a905d;
+}

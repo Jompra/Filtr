@@ -1,0 +1,40 @@
+.MemeView {
+  margin-left: 20px;
+  align-self: center;
+  .meme {
+    p {
+      text-align: right;
+    }
+    .right-meme {
+      input {
+        width: 250px;
+      }
+    }
+
+    .save-btn {
+      border-radius: 5px;
+      text-align: center;
+      background-color: black;
+      color: white;
+      font-weight: 800;
+      width: 250px;
+      height: 40px;
+      display: inline-block;
+      padding: 8px 12px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .btn-meme {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn-meme {
+    font-size: 15px;
+    width: 100%;
+  }
+}

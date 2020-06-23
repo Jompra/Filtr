@@ -1,0 +1,285 @@
+nav {
+  height: 8vh;
+  .navbar-item {
+    margin-left: 30px;
+    font-weight: 900;
+    font-family: "Helvetica Neue";
+  }
+
+  .navbar-item:hover{
+    color: inherit;
+  }
+}
+.box {
+  margin: 0px 40px 40px 40px;
+  height: 88.2vh;
+  background-color: rgb(241, 240, 235);
+  // border: 1px solid rgba(0, 0, 0, 0.527);
+
+  .Home {
+    height: 88.6vh;
+    font-family: "Helvetica Neue";
+    align-items: center;
+
+    .right-side {
+      align-items: center;
+
+      height: 88.6vh;
+      margin-left: 10%;
+      .right-top {
+        align-self: flex-end;
+        h1 {
+          font-size: 100px;
+          font-weight: 450;
+        }
+        h2 {
+          font-size: 35px;
+        }
+      }
+      .right-btm {
+        align-self: flex-start;
+        margin-top: 40px;
+        .upload {
+          border-radius: 5px;
+          text-align: center;
+          background-color: black;
+          color: white;
+          font-weight: 800;
+          width: 200px;
+          height: 50px;
+          display: inline-block;
+          padding: 11px 12px;
+          cursor: pointer;
+          input[type="file"] {
+            display: none;
+          }
+        }
+
+        .loading {
+          display: inline-block;
+        }
+      }
+    }
+
+    .left-side {
+      height: 88.6vh;
+      .img-one {
+        position: absolute;
+        top: 25vh;
+        left: 8.6vw;
+        width: 28vw;
+        height: 50vh;
+        background: url("https://res.cloudinary.com/dx8pt11io/image/upload/v1592568639/Filr%20HomePage/photo-1529304344766-6b537de190f8_bu1xes.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      .filtr-one {
+        position: absolute;
+        animation: grow-1 2.5s;
+        top: 25vh;
+        left: 8.6vw;
+        width: 28vw;
+        height: 50vh;
+        background-color: rgba(216, 104, 104, 0.185);
+      }
+
+      @keyframes grow-1 {
+        0% {
+          top: 25vh;
+          left: 8.6vw;
+          width: 5.6vw;
+          height: 10vh;
+        }
+      }
+
+      .img-two {
+        position: absolute;
+        left: 27.6vw;
+        top: 35vh;
+        width: 350px;
+        height: 350px;
+        background: url("https://res.cloudinary.com/dx8pt11io/image/upload/v1592568668/Filr%20HomePage/photo-1493321384838-70c5a85ba487_c2zver.jpg");
+        background-position: 500px 700px;
+        background-size: 600px;
+      }
+
+      .filtr-two {
+        position: absolute;
+        animation: grow-2 2.5s;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+        background-color: rgba(91, 120, 187, 0.151);
+      }
+
+      @keyframes grow-2 {
+        0% {
+          left: 27.6vw;
+          top: 35vh;
+          width: 1.6vw;
+          height: 10vh;
+        }
+
+        100% {
+          left: 27.6vw;
+          top: 35vh;
+          width: 350px;
+          height: 350px;
+        }
+      }
+
+      .img-three {
+        position: absolute;
+        left: 19.6vw;
+        top: 62vh;
+        width: 250px;
+        height: 250px;
+        background-color: black; /* fallback color */
+        background: url("https://res.cloudinary.com/dx8pt11io/image/upload/v1592568696/Filr%20HomePage/photo-1542513217-0b0eedf7005d_gzhdpx.jpg");
+        background-position: 520px 780px;
+        background-size: 750px;
+      }
+
+      .filtr-three {
+        position: absolute;
+        animation: grow-3 2.5s;
+        animation-delay: 4s;
+        animation-fill-mode: forwards;
+        background-color: rgba(179, 184, 180, 0.13);
+      }
+
+      @keyframes grow-3 {
+        0% {
+          left: 19.6vw;
+          top: 62vh;
+          width: 1.6vw;
+          height: 10vh;
+        }
+
+        100% {
+          left: 19.6vw;
+          top: 62vh;
+          width: 250px;
+          height: 250px;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: 1256px) {
+
+}
+
+@media (max-width: 1030px) {
+  .box {
+    margin: 0px;
+    position: absolute;
+    z-index: 0;
+    width: 100vw;
+    // overflow: scroll;
+  }
+
+  .left-side {
+    position: absolute;
+    bottom: 35%;
+    left: 30%;
+    z-index: -1;
+
+    .img-one,
+    .img-two,
+    .filtr-one,
+    .filtr-two {
+      width: 40vw !important;
+    }
+    .img-three, .filtr-three{
+      left: 35vw !important;
+      width: 35vw !important;
+    }
+  }
+
+  .right-side {
+    position: absolute;
+    top: 50%;
+  }
+
+  .box .Home .right-side {
+    height: 20.6vh;
+    margin-left: 0%;
+  }
+}
+
+@media (max-width: 800px) {
+  .box .Home .right-side .right-top h1 {
+    font-size: 40px;
+  }
+  .box .Home .right-side .right-top h2 {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .box .Home .right-side .right-btm .upload {
+    font-size: 15px;
+    width: 150px;
+    height: 45px;
+  }
+  .box .Home .right-side .right-btm {
+    margin-top: 20px;
+  }
+
+  .left-side {
+    position: absolute;
+    left: 30%;
+    bottom: 30%;
+  }
+
+  .box .Home .left-side .filtr-one,
+  .box .Home .left-side .filtr-two,
+  .box .Home .left-side .filtr-three {
+    width: 0px;
+    height: 0px;
+    animation: none !important;
+  }
+
+  .box .Home .left-side .img-one,
+  .box .Home .left-side .img-two {
+    width: 30vw;
+    height: 20vh;
+    left: -10vw;
+    top: 25vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  .box .Home .left-side .img-three {
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top:35vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-one,
+  .filtr-one {
+    width: 40vw;
+    height: 40vh;
+  }
+  .img-two,
+  .filtr-two {
+    top: 30vh;
+    left: 20.6vw;
+    width: 50vw;
+    height: 30vh;
+  }
+  .img-three,
+  .filtr-three {
+    left: 50vw;
+    top: 35vh;
+    width: 200px;
+    height: 300px;
+  }
+}
