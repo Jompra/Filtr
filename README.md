@@ -10,6 +10,8 @@ Create a full stack Django and React application.
 
 We decided that an image editor would be an interesting product to create.
 
+![Demo of Image editor working](https://github.com/Jompra/filtr/blob/master/Image-Edit-Demo.gif)
+
 ## Functionality
 ### Backend
 The backend of the app utilizes Django and the Django Rest Framework to get information between the user's frontend interface and our python based image processing.
