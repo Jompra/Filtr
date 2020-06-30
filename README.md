@@ -11,6 +11,7 @@ Create a full stack Django and React application.
 We decided that an image editor would be an interesting product to create.
 
 ![Demo of Image editor working](https://github.com/Jompra/filtr/blob/master/Image-Edit-Demo.gif)
+The gif is compressed to save space. Images edited in Filtr are the same quality as the original.
 
 ## Functionality
 ### Backend
