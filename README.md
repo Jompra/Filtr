@@ -3,7 +3,9 @@
 ## Introduction
 This Full stack app is an image editor for users to add colouring and interesting effects to their photographs and images. Although challenging this app was great fun to build. Find the deployed version [here](http://gkj.me.uk/filtr). Please be aware It could take up to 30 seconds for heroku's dyno to wake up.
 
-[Purvi Trivedi](https://github.com/purvitrivedi) and I completed this project in 7 days. Using Trello as our issue tracking board
+[Purvi Trivedi](https://github.com/purvitrivedi) and I completed this project in 7 days. Using Trello as our issue tracking and feature planning board.
+
+![Screenshot of Filtr App](https://github.com/Jompra/filtr/blob/master/FiltrScreenshot.png)
 
 ## Install Instructions
 I recommend using the deployed version of this app [here](http://gkj.me.uk/filtr). However, follow below if you want to run it locally.
@@ -150,13 +152,14 @@ Filtr uses [Cloudinary](https://cloudinary.com) to host the image that's origina
 CSS filters such as Grayscale, Contrast, Sepia, Saturation, and Blur add tweaking to the user's images that would be slow to update if done server side.
 In order to allow the user to download their image after front end edits have been made we had to use a canvas element. To make this easier to implement we used [Konva](https://konvajs.org/). 
 I was able to implement drag and drop emojis and allow users to add exciting icons to their images as well as basic image filters.
+
 ![Front End Editing Options](https://github.com/Jompra/filtr/blob/master/Frontend-Editing.png)
 
 ## Task Splitting
 Purvi and I used Trello to ensure we didn't miss any features or bugs and meant that we were not at risk of working on the same feature at the same time. We both worked on every part of the app but we felt that it was important to lead features independently as this meant that features could be built quickly and efficiently.
 
 I took ownership of:
-* Proof of Concept for: Tint, Histogram, Artish Brush filters
+* Proof of Concept for Tint, Histogram, and Artish Brush filters
 * Image model routing
 * Ensuring text on memes were centered and sized depending on user's input.
 * Thumbnail generation
@@ -173,7 +176,7 @@ During the project Purvi and I pair coded using Visual Studio Live Share whilst 
 
 ## Wins and Blockers
 
-To calculate whether the meme characters should be broken into multiple lines I had to physically measure using Sketch the average character width of the Impact font at different font heights. I worked out that Impact has an average width to height ratio of 0.505. Using pillow I was then able to get the width of the image itself. Using these two pieces of data I was then able to decide whether the string should be split using a `\n` newline character. The position of the bottom text is then also modified to be more visually appealing if the text covers two lines.
+To calculate whether the meme characters should be broken into multiple lines I used Sketch to physically measure the average character width of the Impact font at different font heights. I worked out that Impact has an average width to height ratio of 0.505. Using pillow I was then able to get the width of the image itself. Using these two pieces of data I was then able to decide whether the string should be split using a `\n` newline character. The position of the bottom text is then also modified to be more visually appealing if the text covers two lines.
 
 A blocker that I personally struggled to overcome was outputting an base 64 dataURL from the canvas context so that the user could download it. I expected that this was due to my inexperience using Hooks in React. I reached out to Anton Lavrenov who created the Konva library and he helped shed some light on what I needed to fix.
 
