@@ -28,6 +28,23 @@ You will also need a Cloudinary account that includes an upload preset with thes
 * `$ python3 manage.py runserver` to start app
 * In a browser (Chrome Recommended) navigate to http://127.0.0.1:8000 or the 127 address suggested in terminal if different.
 
+## Technologies Used
+* React.js (Hooks)
+* Python
+* Django
+* PostgreSQL
+* SASS
+* Scikit image
+* Pillow (PIL Fork)
+* Base64 encoding
+* Django rest_framework
+* Matplotlib
+* Numpy
+* Konva
+* Axios
+* Bulma
+* HTTP-proxy-middleware
+* Git/GitHub
 
 ## Brief
 Create a full stack Django and React application.
