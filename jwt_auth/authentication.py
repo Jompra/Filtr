@@ -26,4 +26,5 @@ class JWTAuthentication(BasicAuthentication):
             raise PermissionDenied({'message': 'User Not Found'})
 
         return (user, token)
+    
 
